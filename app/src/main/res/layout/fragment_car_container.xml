@@ -23,7 +23,7 @@
         <ScrollView
             android:layout_width="379dp"
             android:layout_height="640dp"
-            android:layout_marginTop="@dimen/medium_gap"
+            android:layout_marginTop="32dp"
             android:layout_marginBottom="@dimen/medium_gap"
             android:contentDescription="@string/cars_list_scroll_description"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -31,10 +31,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2">
 
-            <LinearLayout
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_movies"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" />
+                android:clipToPadding="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_car">
+
+            </androidx.recyclerview.widget.RecyclerView>
         </ScrollView>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
