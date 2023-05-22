@@ -7,5 +7,5 @@ class CarRepository(private val cars: MutableList<CarModel>) {
     fun getCars() = cars
 
     //Add a car to the mutable list
-    fun addCard(_card: CarModel) = cars.add(_card)
+    fun addCar(_card: CarModel) = cars.add(_card)
 }
