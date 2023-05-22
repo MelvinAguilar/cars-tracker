@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">CarsTracker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cars_tracker_title">Cars Tracker</string>
+    <string name="cars_list_scroll_description">cars list</string>
+    <string name="new_car_action_button_description">New car</string>
+    <string name="add_new_car_title">Add new car</string>
+    <string name="submit_hint">Submit</string>
+    <string name="brand_hint">Brand</string>
+    <string name="model_hint">Model</string>
+    <string name="model_text">Model</string>
+    <string name="brand_text">Brand</string>
+    <string name="car_detail_text">Car Detail</string>
 </resources>

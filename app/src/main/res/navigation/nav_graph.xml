@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/carContainer">
+
+    <fragment
+        android:id="@+id/carContainer"
+        android:name="com.melvin.carstracker.ui.car.container.CarContainer"
+        android:label="CarContainer" >
+        <action
+            android:id="@+id/action_carContainer_to_carDetail"
+            app:destination="@id/carDetail" />
+        <action
+            android:id="@+id/action_carContainer_to_newCarForm"
+            app:destination="@id/newCarForm" />
+    </fragment>
+    <fragment
+        android:id="@+id/carDetail"
+        android:name="com.melvin.carstracker.ui.car.CarDetail"
+        android:label="CarDetail" >
+        <action
+            android:id="@+id/action_carDetail_to_carContainer"
+            app:destination="@id/carContainer" />
+    </fragment>
+    <fragment
+        android:id="@+id/newCarForm"
+        android:name="com.melvin.carstracker.ui.car.newcar.NewCarForm"
+        android:label="NewCarForm" >
+        <action
+            android:id="@+id/action_newCarForm_to_carContainer"
+            app:destination="@id/carContainer" />
+    </fragment>
+</navigation>
